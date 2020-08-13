@@ -5,7 +5,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/gleisonkz/algorithms-python)
 ![GitHub last commit](https://img.shields.io/github/last-commit/gleisonkz/algorithms-python)
 
-### All algorithms implemented in Python (built during my college classes in information systems.)
+## All algorithms implemented in Python (built during my college classes in information systems.)
 
 ## List of Algorithms
 
