@@ -7,7 +7,3 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/gleisonkz/algorithms-python)
 
 ## All algorithms implemented in Python (built during my college classes in information systems.)
-
-## List of Algorithms
-
-See our [directory](DIRECTORY.md).
