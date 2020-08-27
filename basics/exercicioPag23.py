@@ -8,7 +8,7 @@ person = {
 
 print(person)
 
-print(f"person['Name']")
+print(person['Name'])
 print(person['LastName'])
 print(person['Age'])
 print(person['Course'])
