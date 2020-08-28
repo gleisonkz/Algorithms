@@ -1,17 +1,17 @@
-import sys
+import os
 
 def tryParseInt(value):
     try:
-        num = int(value)
-    except ValueError:
+        return int(value)
+    except:
         print("Coffin Dance")
-        sys.exit(True)
-    return num % 2 == 0
+        os._exit(0)
 
 def isEvenOrOdd(number):
-    number = tryParseInt(number)
-    types = ["Odd", "Even"]
-    return types[number]
+    parsedNumber = tryParseInt(number)
+    parsedNumber = parsedNumber % 2 != 0
+    types = ["Even", "Odd"]
+    return types[parsedNumber]
 
 print(isEvenOrOdd(2))
 print(isEvenOrOdd(1))
