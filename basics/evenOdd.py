@@ -3,7 +3,7 @@ import os
 def tryParseInt(value):
     try:
         return int(value)
-    except:
+    except Exception:
         print("Coffin Dance")
         os._exit(0)
 

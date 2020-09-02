@@ -1,6 +1,6 @@
 from random import randint
 from time import sleep
-from enum import Enum, auto
+from enum import Enum
 import os
 
 class PlayerState(Enum):
@@ -36,7 +36,7 @@ def isGuessRight(playerOption, cpuOption, remainingChances):
 def validateInput(value):
     try:
         return int(value)
-    except:
+    except Exception:
         print("You must be input a integer value.")
         exitGame()
 
@@ -51,7 +51,6 @@ def isGameFinished(status):
     }
     outputs[status]()
 
-
 def refreshCpuChoice(level, choice):
     refresh = {
         LevelState.EASY: choice[0],
@@ -59,15 +58,14 @@ def refreshCpuChoice(level, choice):
     }
     choice[0] = refresh[level]
 
-
 def convertInputToInt(message):
     value = input(message)
     return validateInput(value)
 
-
 playerRemainingTries = 3
-os.system('cls')
+os.system('cls||clear')
 cpuChoice = [randint(1, 5)]
+
 userInputLevel = convertInputToInt(
     "Choose the level game: [1] = EASY [2] = HARD: ")
 currentLevel = LevelState(userInputLevel)
