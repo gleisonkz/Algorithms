@@ -4,6 +4,7 @@
         "Betania",
         "Impar",
         "classificacao",
-        "condicoes"
+        "condicoes",
+        "strftime"
     ]
 }
