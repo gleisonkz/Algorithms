@@ -1,7 +1,7 @@
 person = {
     "Name": "Gleison",
     "LastName": "Almeida",
-    'Age': '26',
+    'Age': 26,
     "Course": "Sistemas de Informação",
     "Address": "Rua D, padrão 105 casa 07 - Betania"
 }

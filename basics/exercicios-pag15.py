@@ -29,11 +29,17 @@ printValues(items, quantity, 3)
 printValues(items, quantity, 4)
 
 # Exercicio 03 - Utilizando For
-items = [None] * 5
-quantity = [None] * 5
-for i in range(5):
-    items[i] = input("Informe um item: ")
-    quantity[i] = input("Qual a quantidade?")
+def tryParseInt(message):
+    try:
+        return int(input(message))
+    except ValueError:
+        print("You must be input a integer value.")
+        return tryParseInt(message)
 
-for i in range(5):
-    print(f"Item {i + 1} - {items[i]} | Qtd: {quantity[i]}")
+items = [{
+    "key": input("Informe um item: "),
+    "value": tryParseInt("Qual a quantidade? ")}
+    for item in range(5)]
+for index, item in enumerate(items):
+    print(f"Item {index + 1} | Value: {item['key']} | Qtd: {item['value']}")
+

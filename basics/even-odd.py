@@ -4,13 +4,13 @@ def tryParseInt(value):
     try:
         return int(value)
     except Exception:
-        print("Coffin Dance")
+        print("You must be input a integer value.")
         os._exit(0)
 
 def isEvenOrOdd(number):
-    parsedNumber = tryParseInt(number)
-    parsedNumber = parsedNumber % 2 != 0
     types = ["Even", "Odd"]
+    parsedNumber = tryParseInt(number)
+    parsedNumber = parsedNumber % 2 != 0    
     return types[parsedNumber]
 
 print(isEvenOrOdd(2))

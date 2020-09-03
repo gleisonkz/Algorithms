@@ -7,7 +7,6 @@ class PlayerState(Enum):
     WINNER = "Congratulations, You Guess Right!"
     MISS = "You're wrong try again!"
     LOOSER = "You loose, I thought in another number"
-
 class LevelState(Enum):
     EASY = 1
     HARD = 2

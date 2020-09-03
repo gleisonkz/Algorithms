@@ -1,4 +1,3 @@
-# Exercise 03
 totalPerson = 5
 
 beer = (75 * 2.20)
@@ -11,4 +10,4 @@ totalPrice = (
     beer + spaghetti +
     tomatoSauce + onion +
     garlic + frenchBread) / totalPerson
-print(f"The price for each people is {totalPrice}")
+print(f"The price for each people is {totalPrice:.2f}")

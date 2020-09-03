@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+
 def exit(message):
     print(message)
     os._exit(0)

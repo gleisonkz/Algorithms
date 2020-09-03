@@ -1,11 +1,11 @@
-# Exercise 01
 import os
+from datetime import datetime
 
 def tryParseInt(value):
     try:
         return int(value)
     except Exception:
-        print("Coffin Dance")
+        print("You must be input a integer value.")
         os._exit(0)
 
 def getUserValue(message):
@@ -20,7 +20,7 @@ def isAbleToVote(age):
     }
     return outputs[True]
 
-currentYear = 2020
+currentYear = datetime.now().year
 personYear = getUserValue("Write your year of birth: ")
 age = currentYear - personYear
 message = isAbleToVote(age)
