@@ -1,13 +1,12 @@
 person = {
-    "Name":"Gleison",
-    "LastName":"Almeida",
-    'Age':'26',
-    "Course":"Sistemas de Informação",
-    "Address":"Rua D, padrão 105 casa 07 - Betania"
+    "Name": "Gleison",
+    "LastName": "Almeida",
+    'Age': '26',
+    "Course": "Sistemas de Informação",
+    "Address": "Rua D, padrão 105 casa 07 - Betania"
 }
 
 print(person)
-
 print(person['Name'])
 print(person['LastName'])
 print(person['Age'])
@@ -27,9 +26,3 @@ newPerson['Age'] = 20
 
 print(newPerson)
 print(person.values)
-
-
-
-
-
-

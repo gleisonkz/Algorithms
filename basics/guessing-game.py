@@ -66,8 +66,7 @@ playerRemainingTries = 3
 os.system('cls||clear')
 cpuChoice = [randint(1, 5)]
 
-userInputLevel = convertInputToInt(
-    "Choose the level game: [1] = EASY [2] = HARD: ")
+userInputLevel = convertInputToInt("Choose the level game: [1] = EASY [2] = HARD: ")
 currentLevel = LevelState(userInputLevel)
 print("I'll think a number between 1 and 5!, TRY TO GUESS...")
 sleep(2)
@@ -80,8 +79,6 @@ while playerRemainingTries > 0:
     isRight = isGuessRight(playerChoice, cpuChoice, playerRemainingTries)
     infoMessage = isRight.value
     print(infoMessage)
-    # if isRight is PlayerState.WINNER:
-    #     exitGame()
     isGameFinished(isRight)
     playerRemainingTries -= 1
 
