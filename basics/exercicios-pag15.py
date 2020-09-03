@@ -13,14 +13,14 @@ def getUserValue(items, quantity, position):
     items[position] = input("Informe um item: ")
     quantity[position] = input("Qual a quantidade?")
 
+def printValues(items, quantity, position):
+    print(f"Item {position + 1} - {items[position]} | Qtd: {quantity[position]}")    
+
 getUserValue(items, quantity, 0)
 getUserValue(items, quantity, 1)
 getUserValue(items, quantity, 2)
 getUserValue(items, quantity, 3)
 getUserValue(items, quantity, 4)
-
-def printValues(items, quantity, position):
-    print(f"Item {position + 1} - {items[position]} | Qtd: {quantity[position]}")
 
 printValues(items, quantity, 0)
 printValues(items, quantity, 1)
