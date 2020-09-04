@@ -1,5 +1,9 @@
 {
     "python.linting.mypyEnabled": false,
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true,
+    "cSpell.words": [
+        "pytube"
+    ],
+    "python.autoComplete.extraPaths": ["./D:/Sistemas de Informação/2º Período/Python/algorithms-python/basics.py"]
 }

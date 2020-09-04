@@ -2,7 +2,6 @@ from random import randint
 from time import sleep
 from enum import Enum
 import os
-
 class PlayerState(Enum):
     WINNER = "Congratulations, You Guess Right!"
     MISS = "You're wrong try again!"
@@ -50,6 +49,7 @@ def isGameFinished(status):
     }
     outputs[status]()
 
+
 def refreshCpuChoice(level, choice):
     refresh = {
         LevelState.EASY: choice[0],
@@ -57,15 +57,18 @@ def refreshCpuChoice(level, choice):
     }
     choice[0] = refresh[level]
 
+
 def convertInputToInt(message):
     value = input(message)
     return validateInput(value)
+
 
 playerRemainingTries = 3
 os.system('cls||clear')
 cpuChoice = [randint(1, 5)]
 
-userInputLevel = convertInputToInt("Choose the level game: [1] = EASY [2] = HARD: ")
+userInputLevel = convertInputToInt(
+    "Choose the level game: [1] = EASY [2] = HARD: ")
 currentLevel = LevelState(userInputLevel)
 print("I'll think a number between 1 and 5!, TRY TO GUESS...")
 sleep(2)
@@ -80,5 +83,4 @@ while playerRemainingTries > 0:
     print(infoMessage)
     isGameFinished(isRight)
     playerRemainingTries -= 1
-
 exitGame()
