@@ -63,8 +63,8 @@ driver.get("https://aprovadoapp.com/#")
 
 clickBySelector("a.btn.btn-link.dropdown-toggle")
 
-sendTextOnElementById('email', 'gleisonsubzerokz@gmail.com')
-sendTextOnElementById('senha', 'g33888705')
+sendTextOnElementById('email', '')
+sendTextOnElementById('senha', '')
 clickBySelector(".btn.btn-success.btnLogin.__tab-campo")
 
 clickBySelector("ul.nav > li:nth-child(3)") # Atividades
