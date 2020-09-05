@@ -1,16 +1,16 @@
 import os
 from datetime import datetime
 
-def exit(message):
+def exitGame(message):
     print(message)
     os._exit(0)
 
 def validateMonth(month):
-    (month <= 0 or month > 12) and exit("Invalid Month")
+    (month <= 0 or month > 12) and exitGame("Invalid Month")
 
 def validateDay(day, month):
     daysInMonth = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    (day <= 0 or day > daysInMonth[month]) and exit("Invalid Day")
+    (day <= 0 or day > daysInMonth[month]) and exitGame("Invalid Day")
 
 def validateYear(year):
     currentYear = datetime.now().year
