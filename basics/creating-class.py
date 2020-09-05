@@ -3,15 +3,18 @@ class Computer:
         self.Brand = brand
         self.Memory = memory
         self.GraphicCard = graphicCard
+        self.StateOn = "Turning on...."
+        self.StateOff = "Turning off...."
 
     def TurnOn(self):
-        print('Turning on....')
+        print(self.TurnOn)
 
     def TurnOff(self):
-        print('Turning off....')
+        print(self.TurnOff)
 
     def ShowThisComputerInformation(self):
-        print(f"Brand: {self.Brand} | Memory: {self.Memory} | Graphic Card: {self.GraphicCard}")
+        print(
+            f"Brand: {self.Brand} | Memory: {self.Memory} | Graphic Card: {self.GraphicCard}")
 
 
 pc1 = Computer("Asus", "6GB", "RX570")
