@@ -5,8 +5,8 @@ class SimpleScreen:
     def __init__(self):
         layout = [
             [sg.Text('Video URL', size=(9, 0)), sg.InputText(key='videoURL')],
-            [sg.Text('E-mail', size=(9, 0)), sg.InputText(key='email', size=(35, 0),default_text="gleisonsubzerokz@gmail.com")],
-            [sg.Text('Password', size=(9, 0)), sg.InputText(key='password', size=(35, 0), password_char='*',default_text="g33888705")],
+            [sg.Text('E-mail', size=(9, 0)), sg.InputText(key='email', size=(35, 0),default_text="")],
+            [sg.Text('Password', size=(9, 0)), sg.InputText(key='password', size=(35, 0), password_char='*',default_text="")],
             [sg.InputOptionMenu(('Passive Listening', 'Active Listening'), key='option')],
             [sg.Button('Ok', size=(9, 0))]
         ]
