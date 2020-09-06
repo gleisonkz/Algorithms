@@ -2,12 +2,15 @@
     "cSpell.words": [
         "Apresentacao",
         "Betania",
+        "Duracao",
         "Impar",
+        "cadasteditar",
         "classificacao",
         "condicoes",
         "strftime"
     ],
     "python.linting.pylintEnabled": true,
     "python.linting.mypyEnabled": false,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.pythonPath": "C:\\Python38\\python.exe"
 }

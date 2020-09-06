@@ -1,6 +1,7 @@
 def getFruitName():
     return input("Write the fruit name: ")
 
+
 fruits = [
     {"name": getFruitName(), "value": 1.00},
     {"name": getFruitName(), "value": 1.00 * 2},

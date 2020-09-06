@@ -2,17 +2,23 @@ from random import randint
 from time import sleep
 from enum import Enum
 import os
+
+
 class PlayerState(Enum):
     WINNER = "Congratulations, You Guess Right!"
     MISS = "You're wrong try again!"
     LOOSER = "You loose, I thought in another number"
+
+
 class LevelState(Enum):
     EASY = 1
     HARD = 2
 
+
 def exitGame():
     loading("LEAVING")
     os._exit(0)
+
 
 def loading(message):
     for index in range(8):
@@ -23,6 +29,7 @@ def loading(message):
         print(f"{dots[index]}", end="\r")
         sleep(0.2)
 
+
 def isGuessRight(playerOption, cpuOption, remainingChances):
     outputs = {
         playerOption == cpuOption[0]: PlayerState.WINNER,
@@ -31,6 +38,7 @@ def isGuessRight(playerOption, cpuOption, remainingChances):
     }
     return outputs[True]
 
+
 def validateInput(value):
     try:
         return int(value)
@@ -38,8 +46,10 @@ def validateInput(value):
         print("You must be input a integer value.")
         exitGame()
 
+
 def doNothing():
     pass
+
 
 def isGameFinished(status):
     outputs = {
