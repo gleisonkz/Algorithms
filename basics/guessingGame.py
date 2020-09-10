@@ -28,6 +28,7 @@ def loading(message):
         ]
         print(f"{dots[index]}", end="\r")
         sleep(0.2)
+        pass
 
 
 def isGuessRight(playerOption, cpuOption, remainingChances):

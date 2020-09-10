@@ -47,6 +47,7 @@ def sendTextOnElementById(elementID, text):
 
 
 def createChromeInstanceWithAddBlock():
+
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_extension(r"C:\Projects\Python\adblock.crx")
     return webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
@@ -94,4 +95,5 @@ segundo.send_keys(splitSegundo)
 anotacoes = getElementByID("__atividade-cadasteditar-anotacoes")
 anotacoes.send_keys(videoTitle)
 clickBySelector("button.btn.btn-success.__tab-campo")
+sleep(2)
 driver.quit()
