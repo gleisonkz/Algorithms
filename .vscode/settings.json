@@ -1,19 +1,20 @@
 {
-    "cSpell.words": [
-        "Apresentacao",
-        "Asus",
-        "Betania",
-        "Duracao",
-        "Impar",
-        "Usuario",
-        "cadasteditar",
-        "classificacao",
-        "condicoes",
-        "opcao",
-        "strftime"
-    ],
-    "python.linting.pylintEnabled": true,
-    "python.linting.mypyEnabled": false,
-    "python.linting.enabled": true,
-    "python.pythonPath": "C:\\Python38\\python.exe"
+  "cSpell.words": [
+    "Apresentacao",
+    "Asus",
+    "Betania",
+    "Duracao",
+    "Impar",
+    "Usuario",
+    "cadasteditar",
+    "classificacao",
+    "condicoes",
+    "opcao",
+    "strftime"
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.linting.mypyEnabled": false,
+  "python.linting.enabled": true,
+  "python.pythonPath": "C:\\Python38\\python.exe",
+  "python.formatting.autopep8Args": ["--max-line-length=200"]
 }

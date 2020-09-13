@@ -8,37 +8,31 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
 
-def convertStringTimeToSeconds(string):
-    timeSplit = map(int, string.split(':')[::-1])
-    seconds = 0
-    for index, item in enumerate(timeSplit):
-        dic = [item, item * 60, item * 3600]
-        seconds = seconds + dic[index]
-    return seconds
+def formatVideoDuration(videoDuration):
+    hourPlaces = "" if len(videoDuration) > 5 else "00:"
+    videoDuration = f"{hourPlaces}{videoDuration}"
+    return videoDuration.split(':')[::-1]
 
 
 def clickBySelector(selector, seconds=1):
     sleep(seconds)
-    wait.until(EC.presence_of_element_located(
-        (By.CSS_SELECTOR, f"{selector}"))).click()
+    element = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, selector)))
+    element.click()
 
 
 def getAllElementsByClassName(className, seconds=1):
     sleep(seconds)
-    return wait.until(EC.presence_of_all_elements_located(
-        (By.CSS_SELECTOR, className)))
+    return wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, className)))
 
 
 def getElementByID(elementID, seconds=1):
     sleep(seconds)
-    return wait.until(EC.presence_of_element_located(
-        (By.ID, elementID)))
+    return wait.until(EC.presence_of_element_located((By.ID, elementID)))
 
 
 def getElementTextBySelector(selector, seconds=1):
     sleep(seconds)
-    return wait.until(EC.presence_of_element_located(
-        (By.CSS_SELECTOR, selector))).text
+    return wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, selector))).text
 
 
 def sendTextOnElementById(elementID, text):
@@ -47,7 +41,6 @@ def sendTextOnElementById(elementID, text):
 
 
 def createChromeInstanceWithAddBlock():
-
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_extension(r"C:\Projects\Python\adblock.crx")
     return webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
@@ -62,11 +55,8 @@ url = videoURL
 driver.get(url)
 wait = WebDriverWait(driver, 10)
 
-videoTitle = getElementTextBySelector(
-    "h1.title.style-scope.ytd-video-primary-info-renderer")
+videoTitle = getElementTextBySelector("h1.title.style-scope.ytd-video-primary-info-renderer")
 videoDuration = getElementTextBySelector("span.ytp-time-duration")
-teste = convertStringTimeToSeconds(videoDuration)
-novoTime = str(timedelta(seconds=teste))
 
 driver.get("https://aprovadoapp.com/#")
 
@@ -82,12 +72,11 @@ clickBySelector("div.btn-group > button")  # Escolher Materia
 clickBySelector("ul.dropdown-menu.dropMateria.__tab-campo > li:nth-child(4)")
 
 # Escolher Conteudo
-clickBySelector(
-    "div.control-group:nth-child(3) > div.controls > div.btn-group > button")
+clickBySelector("div.control-group:nth-child(3) > div.controls > div.btn-group > button")
 clickBySelector(option)
 
 hora, minuto, segundo = getAllElementsByClassName("input.formDuracao")
-splitHora, splitMinuto, splitSegundo = map(int, novoTime.split(":"))
+splitSegundo, splitMinuto, splitHora = formatVideoDuration(videoDuration)
 hora.send_keys(splitHora)
 minuto.send_keys(splitMinuto)
 segundo.send_keys(splitSegundo)
