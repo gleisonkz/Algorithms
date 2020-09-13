@@ -12,8 +12,7 @@ def validateMonth(month):
 
 
 def validateDay(day, month, year):
-    daysInMonth = [
-        0, 31, getFebruaryDaysInYear(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    daysInMonth = [0, 31, getFebruaryDaysInYear(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     (day <= 0 or day > daysInMonth[month]) and exitGame("Invalid Day")
 
 
