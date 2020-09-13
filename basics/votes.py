@@ -1,5 +1,6 @@
 from enum import Enum
 from utils import Utils
+from os import system
 
 
 class Votes(Enum):
@@ -9,6 +10,19 @@ class Votes(Enum):
     FourthCandidate = 4
     Null = 5
     Blank = 6
+
+
+def showInvalidMessage() -> None:
+    print("Invalid Option, Choose between 1 and 6")
+
+
+def validateUserInput() -> int:
+    optionVote = Utils.inputToInt("Vote:")
+    if optionVote >= 1 and optionVote <= 6:
+        return optionVote
+    else:
+        showInvalidMessage()
+        return validateUserInput()
 
 
 TotalVotes = {
@@ -21,12 +35,24 @@ TotalVotes = {
 }
 
 Utils.showMessage("Starting")
-votesToRegister = Utils.inputToInt("How many votes do you want to register?")
+print("""
+Choice an option Vote below :
+[1] = Vote for First Candidate            
+[2] = Vote for Second Candidate            
+[3] = Vote for Third Candidate            
+[4] = Vote for Fourth Candidate            
+[5] = Vote Null
+[6] = Vote Blank
+""")
+votesToRegister: int = Utils.inputToInt("How many votes do you want to register?")
 
 for usuario in range(votesToRegister):
-    userVote = Utils.inputToInt("Vote:")
+    userVote: int = validateUserInput()
+    # userVote = validateUserInput(userVote)
     candidateOption = Votes(userVote)
     TotalVotes[candidateOption] = TotalVotes[candidateOption] + 1
 
+system('cls||clear')
+print("The Final Result is :")
 for vote, quantity in TotalVotes.items():
     print(f"{vote.name} - Qtd: {quantity}")
