@@ -67,7 +67,7 @@ sendTextOnElementById('senha', password)
 clickBySelector(".btn.btn-success.btnLogin.__tab-campo")
 
 clickBySelector("ul.nav > li:nth-child(3)")  # Atividades
-clickBySelector(".icon-plus.icon-white")  # Cadastrar Nova Atividade
+clickBySelector("button.btn.btn-info.__tab-campo")  # Cadastrar Nova Atividade
 clickBySelector("div.btn-group > button")  # Escolher Materia
 clickBySelector("ul.dropdown-menu.dropMateria.__tab-campo > li:nth-child(4)")
 
