@@ -25,7 +25,7 @@ def validateUserInput() -> int:
         return validateUserInput()
 
 
-TotalVotes = {
+totalVotes = {
     Votes.FirstCandidate: 0,
     Votes.SecondCandidate: 0,
     Votes.ThirdCandidate: 0,
@@ -48,11 +48,10 @@ votesToRegister: int = Utils.inputToInt("How many votes do you want to register?
 
 for usuario in range(votesToRegister):
     userVote: int = validateUserInput()
-    # userVote = validateUserInput(userVote)
     candidateOption = Votes(userVote)
-    TotalVotes[candidateOption] = TotalVotes[candidateOption] + 1
+    totalVotes[candidateOption] = totalVotes[candidateOption] + 1
 
 system('cls||clear')
 print("The Final Result is :")
-for vote, quantity in TotalVotes.items():
+for vote, quantity in totalVotes.items():
     print(f"{vote.name} - Qtd: {quantity}")
