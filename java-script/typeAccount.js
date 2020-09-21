@@ -1,11 +1,11 @@
-const getAccType = (accType) => {
+const getAccountType = (accountType) => {
     const types = {
         PLATINUM: 'Platinum Customer',
         GOLD: 'Gold Customer',
         SILVER: 'Silver Customer',
     }
-    return types[accType]
+    return types[accountType]
 }
-console.log(getAccType("PLATINUM"))
-console.log(getAccType("GOLD"))
-console.log(getAccType("SILVER"))
+console.log(getAccountType("PLATINUM"))
+console.log(getAccountType("GOLD"))
+console.log(getAccountType("SILVER"))
