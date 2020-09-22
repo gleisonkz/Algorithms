@@ -1,22 +1,28 @@
 class Transcriptor {
-    keyValuePair: { [key: string]: string } = {
-        'G': 'C',
-        'C': 'G',
-        'T': 'A',
-        'A': 'U',
-    }
+  private validators = [
+    {
+      expect: (value: string) => !this.keyValuePair[value],
+      action: () => {
+        throw new Error("Invalid input DNA.");
+      },
+    },
+  ];
+  private keyValuePair: { [key: string]: string } = {
+    G: "C",
+    C: "G",
+    T: "A",
+    A: "U",
+  };
 
-    private getRNA(c: string): string {
+  private getRNA(dna: string): string {
+    this.validators.find((item) => item.expect(dna))?.action();
+    const value = this.keyValuePair[dna];
+    return value;
+  }
 
-        const value = this.keyValuePair[c]
-        if (!value) { throw new Error('Invalid input DNA.') }
-        return value;
-    }
-
-    toRna(amostras: string): string {
-
-        const newArray = [...amostras].map(c => this.getRNA(c)).join('');
-        return newArray
-    }
+  toRna(dnaList: string): string {
+    const newArray = [...dnaList].map((dna) => this.getRNA(dna)).join("");
+    return newArray;
+  }
 }
-export default Transcriptor
+export default Transcriptor;
