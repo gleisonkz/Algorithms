@@ -10,7 +10,7 @@ def getStudentStatus(note: int) -> str:
     return validations[True]
 
 
-def average(note1, note2):
+def average(note1: float, note2: float) -> float:
     return (note1 + note2) / 2
 
 
