@@ -18,4 +18,3 @@ def isEvenOrOdd(number):
 
 print(isEvenOrOdd(2))
 print(isEvenOrOdd(1))
-print(isEvenOrOdd("a"))

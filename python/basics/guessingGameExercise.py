@@ -4,22 +4,30 @@ from enum import Enum
 import os
 
 
-class PlayerState(Enum):
-    WINNER = "Congratulations, You Guess Right!"
-    MISS = "You're wrong try again!"
-    LOOSER = "You loose, I thought in another number"
+class NumberState(Enum):
+    Hot = "It's hot, it's hot"
+    Cold = "It's hot, it's hot"
 
 
-def exitGame():
+def exitGame(message: str) -> None:
+    print(message)
     loading("LEAVING")
     os._exit(0)
 
 
-def doNothing():
-    pass
+def showNumberState(numberState: NumberState):
+    print(numberState.value)
 
 
-def loading(message):
+def youLoose(number: int) -> None:
+    exitGame(f"You loose, I thought in {number}")
+
+
+def youWin() -> None:
+    exitGame("Congratulations, You Guess Right!")
+
+
+def loading(message: str) -> None:
     for index in range(8):
         dots = [
             f'{message}   ', f'{message}.', f'{message}..', f'{message}...',
@@ -30,7 +38,7 @@ def loading(message):
         pass
 
 
-def tryParseInt(message):
+def tryParseInt(message: str) -> int:
     try:
         return int(input(message))
     except ValueError:
@@ -38,44 +46,25 @@ def tryParseInt(message):
         return tryParseInt(message)
 
 
-def isGuessRight(playerOption, cpuOption, remainingChances):
-    outputs = {
-        playerOption == cpuOption[0]: PlayerState.WINNER,
-        playerOption != cpuOption[0] and remainingChances > 1: PlayerState.MISS,
-        playerOption != cpuOption[0] and remainingChances == 1: PlayerState.LOOSER
-    }
-    return outputs[True]
-
-
-def isHotOrCold(playerOption: int, cpuOption: int) -> None:
-
-    # outputs = {
-    #     playerOption == cpuOption[0]: PlayerState.WINNER,
-    #     playerOption != cpuOption[0] and remainingChances > 1: PlayerState.MISS,
-    # }
-
-    # def isGameFinished(status, playerChoice, cpuChoice):
-    #     outputs = {
-    #         PlayerState.WINNER: exitGame,
-    #         PlayerState.LOOSER: doNothing,
-    #         PlayerState.MISS: isHotOrCold
-    #     }
-    #     outputs[status]()
-
-
-playerRemainingTries = 3
+playerRemainingTries: int = 3
+factor: int = 5
 os.system('cls||clear')
-cpuChoice = [randint(1, 5)]
+cpuChoice: int = randint(1, 100)
+
+cpuChoiceMinRange: int = cpuChoice - 5
+cpuChoiceMaxRange: int = cpuChoice + 5
 print("I'll think a number, TRY TO GUESS...")
 sleep(2)
 
-# while playerRemainingTries > 0:
-#     playerChoice = input("In what number did I think?")
-#     playerChoice = tryParseInt(playerChoice)
-#     loading("LOADING")
-#     isRight = isGuessRight(playerChoice, cpuChoice, playerRemainingTries)
-#     infoMessage = isRight.value
-#     print(infoMessage)
-#     isGameFinished(isRight, playerChoice, cpuChoice)
-#     playerRemainingTries -= 1
-# exitGame()
+
+while playerRemainingTries > 0:
+    playerChoice = tryParseInt("In what number did I think?")
+
+    if playerChoice != cpuChoice and playerChoice >= cpuChoiceMinRange and playerChoice <= cpuChoiceMaxRange:
+        showNumberState(NumberState.Hot)
+    elif playerChoice == cpuChoice:
+        youWin()
+    elif playerRemainingTries > 1:
+        showNumberState(NumberState.Cold)
+    playerRemainingTries -= 1
+youLoose(cpuChoice)
