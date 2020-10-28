@@ -1,0 +1,14 @@
+class Car:
+    model: str
+    color: str
+    year: int
+    brand: str
+    chassis: str
+    owner: str
+    maxSpeed: int
+    currentSpeed: int
+    doorNumbers: int
+    hasSunroof: bool
+    gearNumbers: int
+    hasAutomaticGearBox: bool
+    fuelLevel: int
