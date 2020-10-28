@@ -2,59 +2,36 @@ from Car import Car
 
 car1: Car = Car()
 car2: Car = Car()
+cars = [car1, car2]
 
-car1.model = input("Type the model: ")
-car1.color = input("Type the color: ")
-car1.year = input("Type the year: ")
-car1.brand = input("Type the brand: ")
-car1.chassis = input("Type the chassis: ")
-car1.owner = input("Who's the owner? ")
-car1.maxSpeed = input("What's the max speed? ")
-car1.currentSpeed = input("What's the current speed? ")
-car1.doorNumbers = input("How many doors? ")
-car1.hasSunroof = input("Does it have sunroof? ")
-car1.gearNumbers = input("How many gears? ")
-car1.hasAutomaticGearBox = input("Does it have automatic gearbox?")
-car1.fuelLevel = input("What's the current fuelLevel ?")
+for car in cars:
+    car.model = input("Type the model: ")
+    car.color = input("Type the color: ")
+    car.year = input("Type the year: ")
+    car.brand = input("Type the brand: ")
+    car.chassis = input("Type the chassis: ")
+    car.owner = input("Who's the owner? ")
+    car.maxSpeed = input("What's the max speed? ")
+    car.currentSpeed = input("What's the current speed? ")
+    car.doorNumbers = input("How many doors? ")
+    car.hasSunroof = input("Does it have sunroof? ")
+    car.gearNumbers = input("How many gears? ")
+    car.hasAutomaticGearBox = input("Does it have automatic gearbox?")
+    car.fuelLevel = input("What's the current fuelLevel ?")
 
-car2.model = input("Type the model: ")
-car2.color = input("Type the color: ")
-car2.year = input("Type the year: ")
-car2.brand = input("Type the brand: ")
-car2.chassis = input("Type the chassis: ")
-car2.owner = input("Who's the owner? ")
-car2.maxSpeed = input("What's the max speed? ")
-car2.currentSpeed = input("What's the current speed? ")
-car2.doorNumbers = input("How many doors? ")
-car2.hasSunroof = input("Does it have sunroof? ")
-car2.gearNumbers = input("How many gears? ")
-car2.hasAutomaticGearBox = input("Does it have automatic gearbox?")
-car2.fuelLevel = input("What's the current fuelLevel ?")
-
-print(car1.model)
-print(car1.color)
-print(car1.year)
-print(car1.brand)
-print(car1.chassis)
-print(car1.owner)
-print(car1.maxSpeed)
-print(car1.currentSpeed)
-print(car1.doorNumbers)
-print(car1.hasSunroof)
-print(car1.gearNumbers)
-print(car1.hasAutomaticGearBox)
-print(car1.fuelLevel)
-
-print(car2.model)
-print(car2.color)
-print(car2.year)
-print(car2.brand)
-print(car2.chassis)
-print(car2.owner)
-print(car2.maxSpeed)
-print(car2.currentSpeed)
-print(car2.doorNumbers)
-print(car2.hasSunroof)
-print(car2.gearNumbers)
-print(car2.hasAutomaticGearBox)
-print(car2.fuelLevel)
+for index, car in enumerate(cars):
+    print(f""" Car number {index + 1}
+    Model: {car.model}    
+    Color: {car.color}    
+    Year: {car.year}    
+    Brand: {car.brand}    
+    Chassis: {car.chassis}    
+    Owner: {car.owner}    
+    MaxSpeed: {car.maxSpeed}    
+    CurrentSpeed: {car.currentSpeed}    
+    DoorNumbers: {car.doorNumbers}    
+    HasSunroof: {car.hasSunroof}    
+    GearNumbers: {car.gearNumbers}    
+    HasAutomaticGearBox: {car.hasAutomaticGearBox}    
+    FuelLevel: {car.fuelLevel}
+    """)
