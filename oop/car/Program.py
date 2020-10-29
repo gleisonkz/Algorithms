@@ -1,10 +1,9 @@
 from Car import Car
 
-car1: Car = Car()
-car2: Car = Car()
-cars = [car1, car2]
+cars = []
 
-for car in cars:
+for index in range(2):
+    car = Car()
     car.model = input("Type the model: ")
     car.color = input("Type the color: ")
     car.year = input("Type the year: ")
@@ -18,6 +17,7 @@ for car in cars:
     car.gearNumbers = input("How many gears? ")
     car.hasAutomaticGearBox = input("Does it have automatic gearbox?")
     car.fuelLevel = input("What's the current fuelLevel ?")
+    cars.append(car)
 
 for index, car in enumerate(cars):
     print(f""" Car number {index + 1}

@@ -2297,10 +2297,10 @@
         "kind": 5,
         "importPath": "oop.car.Program",
         "description": "oop.car.Program",
-        "peekOfCode": "cars = [car1, car2]\nfor car in cars:\n    car.model = input(\"Type the model: \")\n    car.color = input(\"Type the color: \")\n    car.year = input(\"Type the year: \")\n    car.brand = input(\"Type the brand: \")\n    car.chassis = input(\"Type the chassis: \")\n    car.owner = input(\"Who's the owner? \")\n    car.maxSpeed = input(\"What's the max speed? \")\n    car.currentSpeed = input(\"What's the current speed? \")",
+        "peekOfCode": "cars = []\nfor index in range(2):\n    car = Car()\n    car.model = input(\"Type the model: \")\n    car.color = input(\"Type the color: \")\n    car.year = input(\"Type the year: \")\n    car.brand = input(\"Type the brand: \")\n    car.chassis = input(\"Type the chassis: \")\n    car.owner = input(\"Who's the owner? \")\n    car.maxSpeed = input(\"What's the max speed? \")",
         "detail": "oop.car.Program",
         "documentation": {
-            "value": "\n```python\nfrom oop.car.Program import cars\n```\n\n```python\n\n\n```\n\n```python\ncars = [car1, car2]\nfor car in cars:\n    car.model = input(\"Type the model: \")\n    car.color = input(\"Type the color: \")\n    car.year = input(\"Type the year: \")\n    car.brand = input(\"Type the brand: \")\n    car.chassis = input(\"Type the chassis: \")\n    car.owner = input(\"Who's the owner? \")\n    car.maxSpeed = input(\"What's the max speed? \")\n    car.currentSpeed = input(\"What's the current speed? \")\n```\n",
+            "value": "\n```python\nfrom oop.car.Program import cars\n```\n\n```python\n\n\n```\n\n```python\ncars = []\nfor index in range(2):\n    car = Car()\n    car.model = input(\"Type the model: \")\n    car.color = input(\"Type the color: \")\n    car.year = input(\"Type the year: \")\n    car.brand = input(\"Type the brand: \")\n    car.chassis = input(\"Type the chassis: \")\n    car.owner = input(\"Who's the owner? \")\n    car.maxSpeed = input(\"What's the max speed? \")\n```\n",
             "supportThemeIcons": false
         }
     },
