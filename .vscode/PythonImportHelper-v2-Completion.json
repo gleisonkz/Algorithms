@@ -411,6 +411,17 @@
         }
     },
     {
+        "label": "Account",
+        "importPath": "Account",
+        "description": "Account",
+        "isExtraImport": true,
+        "detail": "Account",
+        "documentation": {
+            "value": "\n```python\nimport Account\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Car",
         "importPath": "Car",
         "description": "Car",
@@ -418,17 +429,6 @@
         "detail": "Car",
         "documentation": {
             "value": "\n```python\nimport Car\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "Account",
-        "importPath": "oop.Account",
-        "description": "oop.Account",
-        "isExtraImport": true,
-        "detail": "oop.Account",
-        "documentation": {
-            "value": "\n```python\nimport oop.Account\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -2281,6 +2281,42 @@
         }
     },
     {
+        "label": "Account",
+        "kind": 6,
+        "importPath": "oop.Account.Account",
+        "description": "oop.Account.Account",
+        "peekOfCode": "class Account:\n    def __init__(self, accountID):\n        self.AccountID = accountID\n        self.balance = 0.0\n    def showBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value",
+        "detail": "oop.Account.Account",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Account.Account import Account\n```\n\n```python\n\n\n```\n\n```python\nclass Account:\n    def __init__(self, accountID):\n        self.AccountID = accountID\n        self.balance = 0.0\n    def showBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "account1",
+        "kind": 5,
+        "importPath": "oop.Account.Program",
+        "description": "oop.Account.Program",
+        "peekOfCode": "account1 = Account(1)\naccount2 = Account(2)\naccount1.deposit(10)\naccount2.deposit(5)\nprint(account1.showBalance())\nprint(account2.showBalance())\naccount1.transfer(account2, 5)\nprint(account1.showBalance())\nprint(account2.showBalance())",
+        "detail": "oop.Account.Program",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Account.Program import account1\n```\n\n```python\n\n\n```\n\n```python\naccount1 = Account(1)\naccount2 = Account(2)\naccount1.deposit(10)\naccount2.deposit(5)\nprint(account1.showBalance())\nprint(account2.showBalance())\naccount1.transfer(account2, 5)\nprint(account1.showBalance())\nprint(account2.showBalance())\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "account2",
+        "kind": 5,
+        "importPath": "oop.Account.Program",
+        "description": "oop.Account.Program",
+        "peekOfCode": "account2 = Account(2)\naccount1.deposit(10)\naccount2.deposit(5)\nprint(account1.showBalance())\nprint(account2.showBalance())\naccount1.transfer(account2, 5)\nprint(account1.showBalance())\nprint(account2.showBalance())",
+        "detail": "oop.Account.Program",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Account.Program import account2\n```\n\n```python\n\n\n```\n\n```python\naccount2 = Account(2)\naccount1.deposit(10)\naccount2.deposit(5)\nprint(account1.showBalance())\nprint(account2.showBalance())\naccount1.transfer(account2, 5)\nprint(account1.showBalance())\nprint(account2.showBalance())\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Car",
         "kind": 6,
         "importPath": "oop.car.Car",
@@ -2301,162 +2337,6 @@
         "detail": "oop.car.Program",
         "documentation": {
             "value": "\n```python\nfrom oop.car.Program import cars\n```\n\n```python\n\n\n```\n\n```python\ncars = []\nfor index in range(2):\n    car = Car()\n    car.model = input(\"Type the model: \")\n    car.color = input(\"Type the color: \")\n    car.year = input(\"Type the year: \")\n    car.brand = input(\"Type the brand: \")\n    car.chassis = input(\"Type the chassis: \")\n    car.owner = input(\"Who's the owner? \")\n    car.maxSpeed = input(\"What's the max speed? \")\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "Account",
-        "kind": 6,
-        "importPath": "oop.Account",
-        "description": "oop.Account",
-        "peekOfCode": "class Account:\n    accountID: int\n    balance: float\n    clientName: str\n    CPF: str\n    agency: int",
-        "detail": "oop.Account",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Account import Account\n```\n\n```python\n\n\n```\n\n```python\nclass Account:\n    accountID: int\n    balance: float\n    clientName: str\n    CPF: str\n    agency: int\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "ryuAccount",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "ryuAccount = Account()\nkenAccount = Account()\nryuAccount.accountID = 1\nryuAccount.balance = 2000.25\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import ryuAccount\n```\n\n```python\n\n\n```\n\n```python\nryuAccount = Account()\nkenAccount = Account()\nryuAccount.accountID = 1\nryuAccount.balance = 2000.25\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "kenAccount",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "kenAccount = Account()\nryuAccount.accountID = 1\nryuAccount.balance = 2000.25\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import kenAccount\n```\n\n```python\n\n\n```\n\n```python\nkenAccount = Account()\nryuAccount.accountID = 1\nryuAccount.balance = 2000.25\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "ryuAccount.accountID",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "ryuAccount.accountID = 1\nryuAccount.balance = 2000.25\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import ryuAccount.accountID\n```\n\n```python\n\n\n```\n\n```python\nryuAccount.accountID = 1\nryuAccount.balance = 2000.25\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "ryuAccount.balance",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "ryuAccount.balance = 2000.25\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import ryuAccount.balance\n```\n\n```python\n\n\n```\n\n```python\nryuAccount.balance = 2000.25\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "ryuAccount.clientName",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "ryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import ryuAccount.clientName\n```\n\n```python\n\n\n```\n\n```python\nryuAccount.clientName = \"Ryu\"\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "ryuAccount.CPF",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "ryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import ryuAccount.CPF\n```\n\n```python\n\n\n```\n\n```python\nryuAccount.CPF = '1726548232156'\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "ryuAccount.agency",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "ryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import ryuAccount.agency\n```\n\n```python\n\n\n```\n\n```python\nryuAccount.agency = 25\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "kenAccount.accountID",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "kenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import kenAccount.accountID\n```\n\n```python\n\n\n```\n\n```python\nkenAccount.accountID = 2\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "kenAccount.balance",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "kenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import kenAccount.balance\n```\n\n```python\n\n\n```\n\n```python\nkenAccount.balance = 4000.25\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "kenAccount.clientName",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "kenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import kenAccount.clientName\n```\n\n```python\n\n\n```\n\n```python\nkenAccount.clientName = \"Ken\"\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "kenAccount.CPF",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "kenAccount.CPF = '9546548232156'\nkenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import kenAccount.CPF\n```\n\n```python\n\n\n```\n\n```python\nkenAccount.CPF = '9546548232156'\nkenAccount.agency = 25\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "kenAccount.agency",
-        "kind": 5,
-        "importPath": "oop.Program",
-        "description": "oop.Program",
-        "peekOfCode": "kenAccount.agency = 25",
-        "detail": "oop.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.Program import kenAccount.agency\n```\n\n```python\n\n\n```\n\n```python\nkenAccount.agency = 25\n```\n",
             "supportThemeIcons": false
         }
     }
