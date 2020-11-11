@@ -16,8 +16,8 @@ class RaceCar:
         self.currentSpeed = speed if speed <= self.maxSpeed else print(
             "You can't exceed the maximum speed")
 
-    def checkIfIsTurnOn(self, methodToRun, args):
-        methodToRun(args) if self.isTurnOn == True else print("Car's off")
+    def checkIfIsTurnOn(self, callback, args):
+        callback(args) if self.isTurnOn == True else print("Car's off")
 
     def speedUp(self, unit: float):
         self.checkIfIsTurnOn(self.setCurrentSpeed, unit)
