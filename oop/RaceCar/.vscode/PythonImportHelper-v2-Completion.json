@@ -1,0 +1,37 @@
+[
+    {
+        "label": "RaceCar",
+        "importPath": "RaceCar",
+        "description": "RaceCar",
+        "isExtraImport": true,
+        "detail": "RaceCar",
+        "documentation": {
+            "value": "\n```python\nimport RaceCar\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "firstCar",
+        "kind": 5,
+        "importPath": "Program",
+        "description": "Program",
+        "peekOfCode": "firstCar = RaceCar(1, 'Test', 'Team 1', 120.00)\nprint(firstCar.currentSpeed)\nfirstCar.turnOn()\nfirstCar.speedUp(50)\nprint(firstCar.currentSpeed)",
+        "detail": "Program",
+        "documentation": {
+            "value": "\n```python\nfrom Program import firstCar\n```\n\n```python\n\n\n```\n\n```python\nfirstCar = RaceCar(1, 'Test', 'Team 1', 120.00)\nprint(firstCar.currentSpeed)\nfirstCar.turnOn()\nfirstCar.speedUp(50)\nprint(firstCar.currentSpeed)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "RaceCar",
+        "kind": 6,
+        "importPath": "RaceCar",
+        "description": "RaceCar",
+        "peekOfCode": "class RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def setCurrentSpeed(self, speed: float):\n        self.currentSpeed = speed if speed <= self.maxSpeed else print(\n            \"You can't exceed the maximum speed\")",
+        "detail": "RaceCar",
+        "documentation": {
+            "value": "\n```python\nfrom RaceCar import RaceCar\n```\n\n```python\n\n\n```\n\n```python\nclass RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def setCurrentSpeed(self, speed: float):\n        self.currentSpeed = speed if speed <= self.maxSpeed else print(\n            \"You can't exceed the maximum speed\")\n```\n",
+            "supportThemeIcons": false
+        }
+    }
+]

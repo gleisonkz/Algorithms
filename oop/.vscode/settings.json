@@ -1,0 +1,19 @@
+{
+  "window.zoomLevel": 0,
+  "editor.fontSize": 20,
+  "code-runner.ignoreSelection": true,
+  "code-runner.runInTerminal": true,
+
+  "python.linting.mypyEnabled": false,
+  "python.linting.flake8Enabled": false,
+  "python.testing.unittestEnabled": false,
+
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "python.testing.promptToConfigure": false,
+  "python.testing.pytestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
+}

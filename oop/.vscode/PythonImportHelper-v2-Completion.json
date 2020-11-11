@@ -1,0 +1,305 @@
+[
+    {
+        "label": "Account",
+        "importPath": "Account",
+        "description": "Account",
+        "isExtraImport": true,
+        "detail": "Account",
+        "documentation": {
+            "value": "\n```python\nimport Account\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Account",
+        "importPath": "Account",
+        "description": "Account",
+        "isExtraImport": true,
+        "detail": "Account",
+        "documentation": {
+            "value": "\n```python\nimport Account\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Account",
+        "importPath": "Account",
+        "description": "Account",
+        "isExtraImport": true,
+        "detail": "Account",
+        "documentation": {
+            "value": "\n```python\nimport Account\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Calculator",
+        "importPath": "Calculator",
+        "description": "Calculator",
+        "isExtraImport": true,
+        "detail": "Calculator",
+        "documentation": {
+            "value": "\n```python\nimport Calculator\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Calculator",
+        "importPath": "Calculator",
+        "description": "Calculator",
+        "isExtraImport": true,
+        "detail": "Calculator",
+        "documentation": {
+            "value": "\n```python\nimport Calculator\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Car",
+        "importPath": "Car",
+        "description": "Car",
+        "isExtraImport": true,
+        "detail": "Car",
+        "documentation": {
+            "value": "\n```python\nimport Car\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {
+            "value": "\n```python\nimport time\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {
+            "value": "\n```python\nimport sys\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {
+            "value": "\n```python\nimport os\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ATM",
+        "importPath": "ATM",
+        "description": "ATM",
+        "isExtraImport": true,
+        "detail": "ATM",
+        "documentation": {
+            "value": "\n```python\nimport ATM\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "RaceCar",
+        "importPath": "RaceCar",
+        "description": "RaceCar",
+        "isExtraImport": true,
+        "detail": "RaceCar",
+        "documentation": {
+            "value": "\n```python\nimport RaceCar\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Account",
+        "kind": 6,
+        "importPath": "Account.Account",
+        "description": "Account.Account",
+        "peekOfCode": "class Account:\n    def __init__(self, accountID):\n        self.AccountID = accountID\n        self.balance = 0.0\n    def showBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value",
+        "detail": "Account.Account",
+        "documentation": {
+            "value": "\n```python\nfrom Account.Account import Account\n```\n\n```python\n\n\n```\n\n```python\nclass Account:\n    def __init__(self, accountID):\n        self.AccountID = accountID\n        self.balance = 0.0\n    def showBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "account1",
+        "kind": 5,
+        "importPath": "Account.Program",
+        "description": "Account.Program",
+        "peekOfCode": "account1 = Account(1)\naccount2 = Account(2)\naccount1.deposit(10)\naccount2.deposit(5)\nprint(account1.showBalance())\nprint(account2.showBalance())\naccount1.transfer(account2, 5)\nprint(account1.showBalance())\nprint(account2.showBalance())",
+        "detail": "Account.Program",
+        "documentation": {
+            "value": "\n```python\nfrom Account.Program import account1\n```\n\n```python\n\n\n```\n\n```python\naccount1 = Account(1)\naccount2 = Account(2)\naccount1.deposit(10)\naccount2.deposit(5)\nprint(account1.showBalance())\nprint(account2.showBalance())\naccount1.transfer(account2, 5)\nprint(account1.showBalance())\nprint(account2.showBalance())\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "account2",
+        "kind": 5,
+        "importPath": "Account.Program",
+        "description": "Account.Program",
+        "peekOfCode": "account2 = Account(2)\naccount1.deposit(10)\naccount2.deposit(5)\nprint(account1.showBalance())\nprint(account2.showBalance())\naccount1.transfer(account2, 5)\nprint(account1.showBalance())\nprint(account2.showBalance())",
+        "detail": "Account.Program",
+        "documentation": {
+            "value": "\n```python\nfrom Account.Program import account2\n```\n\n```python\n\n\n```\n\n```python\naccount2 = Account(2)\naccount1.deposit(10)\naccount2.deposit(5)\nprint(account1.showBalance())\nprint(account2.showBalance())\naccount1.transfer(account2, 5)\nprint(account1.showBalance())\nprint(account2.showBalance())\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Calculator",
+        "kind": 6,
+        "importPath": "Calculator.Calculator",
+        "description": "Calculator.Calculator",
+        "peekOfCode": "class Calculator:\n    lastResult = 0\n    def sum(self, number1, number2):\n        result = number1 + number2\n        self.lastResult = result\n        return result\n    def getLastResult(self):\n        return self.lastResult\n    @staticmethod\n    def subtraction(number1, number2):",
+        "detail": "Calculator.Calculator",
+        "documentation": {
+            "value": "\n```python\nfrom Calculator.Calculator import Calculator\n```\n\n```python\n\n\n```\n\n```python\nclass Calculator:\n    lastResult = 0\n    def sum(self, number1, number2):\n        result = number1 + number2\n        self.lastResult = result\n        return result\n    def getLastResult(self):\n        return self.lastResult\n    @staticmethod\n    def subtraction(number1, number2):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "objCalc",
+        "kind": 5,
+        "importPath": "Calculator.Program",
+        "description": "Calculator.Program",
+        "peekOfCode": "objCalc = Calculator()\nobjCalc.lastResult = 15\nprint(objCalc.lastResult)\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)",
+        "detail": "Calculator.Program",
+        "documentation": {
+            "value": "\n```python\nfrom Calculator.Program import objCalc\n```\n\n```python\n\n\n```\n\n```python\nobjCalc = Calculator()\nobjCalc.lastResult = 15\nprint(objCalc.lastResult)\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "objCalc.lastResult",
+        "kind": 5,
+        "importPath": "Calculator.Program",
+        "description": "Calculator.Program",
+        "peekOfCode": "objCalc.lastResult = 15\nprint(objCalc.lastResult)\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)",
+        "detail": "Calculator.Program",
+        "documentation": {
+            "value": "\n```python\nfrom Calculator.Program import objCalc.lastResult\n```\n\n```python\n\n\n```\n\n```python\nobjCalc.lastResult = 15\nprint(objCalc.lastResult)\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "firstResult",
+        "kind": 5,
+        "importPath": "Calculator.Program",
+        "description": "Calculator.Program",
+        "peekOfCode": "firstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)",
+        "detail": "Calculator.Program",
+        "documentation": {
+            "value": "\n```python\nfrom Calculator.Program import firstResult\n```\n\n```python\n\n\n```\n\n```python\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "car.Car",
+        "description": "car.Car",
+        "peekOfCode": "class Car:\n    model: str\n    color: str\n    year: int\n    brand: str\n    chassis: str\n    owner: str\n    maxSpeed: int\n    currentSpeed: int\n    doorNumbers: int",
+        "detail": "car.Car",
+        "documentation": {
+            "value": "\n```python\nfrom car.Car import Car\n```\n\n```python\n\n\n```\n\n```python\nclass Car:\n    model: str\n    color: str\n    year: int\n    brand: str\n    chassis: str\n    owner: str\n    maxSpeed: int\n    currentSpeed: int\n    doorNumbers: int\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "cars",
+        "kind": 5,
+        "importPath": "car.Program",
+        "description": "car.Program",
+        "peekOfCode": "cars = []\nfor index in range(2):\n    car = Car()\n    car.model = input(\"Type the model: \")\n    car.color = input(\"Type the color: \")\n    car.year = input(\"Type the year: \")\n    car.brand = input(\"Type the brand: \")\n    car.chassis = input(\"Type the chassis: \")\n    car.owner = input(\"Who's the owner? \")\n    car.maxSpeed = input(\"What's the max speed? \")",
+        "detail": "car.Program",
+        "documentation": {
+            "value": "\n```python\nfrom car.Program import cars\n```\n\n```python\n\n\n```\n\n```python\ncars = []\nfor index in range(2):\n    car = Car()\n    car.model = input(\"Type the model: \")\n    car.color = input(\"Type the color: \")\n    car.year = input(\"Type the year: \")\n    car.brand = input(\"Type the brand: \")\n    car.chassis = input(\"Type the chassis: \")\n    car.owner = input(\"Who's the owner? \")\n    car.maxSpeed = input(\"What's the max speed? \")\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Account",
+        "kind": 6,
+        "importPath": "MenuAccount.Account",
+        "description": "MenuAccount.Account",
+        "peekOfCode": "class Account:\n    def __init__(self, accountID):\n        self.AccountID = accountID\n        self.balance = 0.0\n    def showBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value",
+        "detail": "MenuAccount.Account",
+        "documentation": {
+            "value": "\n```python\nfrom MenuAccount.Account import Account\n```\n\n```python\n\n\n```\n\n```python\nclass Account:\n    def __init__(self, accountID):\n        self.AccountID = accountID\n        self.balance = 0.0\n    def showBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ATM",
+        "kind": 6,
+        "importPath": "MenuAccount.ATM",
+        "description": "MenuAccount.ATM",
+        "peekOfCode": "class ATM:\n    currentAccount = None\n    def __init__(self, currentAccount) -> None:\n        os.system('cls||clear')\n        self.currentAccount = currentAccount\n    def showMenu(self):\n        print(\"************Welcome to Account Bank**************\")\n        action = self.getUserOption()\n        if action == 1:\n            print(self.currentAccount.showBalance())",
+        "detail": "MenuAccount.ATM",
+        "documentation": {
+            "value": "\n```python\nfrom MenuAccount.ATM import ATM\n```\n\n```python\n\n\n```\n\n```python\nclass ATM:\n    currentAccount = None\n    def __init__(self, currentAccount) -> None:\n        os.system('cls||clear')\n        self.currentAccount = currentAccount\n    def showMenu(self):\n        print(\"************Welcome to Account Bank**************\")\n        action = self.getUserOption()\n        if action == 1:\n            print(self.currentAccount.showBalance())\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "userAccount",
+        "kind": 5,
+        "importPath": "MenuAccount.Program",
+        "description": "MenuAccount.Program",
+        "peekOfCode": "userAccount = Account(132131512135)\nobjATM = ATM(userAccount)\nobjATM.showMenu()",
+        "detail": "MenuAccount.Program",
+        "documentation": {
+            "value": "\n```python\nfrom MenuAccount.Program import userAccount\n```\n\n```python\n\n\n```\n\n```python\nuserAccount = Account(132131512135)\nobjATM = ATM(userAccount)\nobjATM.showMenu()\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "objATM",
+        "kind": 5,
+        "importPath": "MenuAccount.Program",
+        "description": "MenuAccount.Program",
+        "peekOfCode": "objATM = ATM(userAccount)\nobjATM.showMenu()",
+        "detail": "MenuAccount.Program",
+        "documentation": {
+            "value": "\n```python\nfrom MenuAccount.Program import objATM\n```\n\n```python\n\n\n```\n\n```python\nobjATM = ATM(userAccount)\nobjATM.showMenu()\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "firstCar",
+        "kind": 5,
+        "importPath": "RaceCar.Program",
+        "description": "RaceCar.Program",
+        "peekOfCode": "firstCar = RaceCar(1, 'Test', 'Team 1', 120.00)\nprint(firstCar.currentSpeed)\nfirstCar.turnOn()\nfirstCar.speedUp(50)\nprint(firstCar.currentSpeed)",
+        "detail": "RaceCar.Program",
+        "documentation": {
+            "value": "\n```python\nfrom RaceCar.Program import firstCar\n```\n\n```python\n\n\n```\n\n```python\nfirstCar = RaceCar(1, 'Test', 'Team 1', 120.00)\nprint(firstCar.currentSpeed)\nfirstCar.turnOn()\nfirstCar.speedUp(50)\nprint(firstCar.currentSpeed)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "RaceCar",
+        "kind": 6,
+        "importPath": "RaceCar.RaceCar",
+        "description": "RaceCar.RaceCar",
+        "peekOfCode": "class RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def __init__(self, carID: int, pilot: str, team: str, maxSpeed: float):\n        self.carID = carID\n        self.pilot = pilot",
+        "detail": "RaceCar.RaceCar",
+        "documentation": {
+            "value": "\n```python\nfrom RaceCar.RaceCar import RaceCar\n```\n\n```python\n\n\n```\n\n```python\nclass RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def __init__(self, carID: int, pilot: str, team: str, maxSpeed: float):\n        self.carID = carID\n        self.pilot = pilot\n```\n",
+            "supportThemeIcons": false
+        }
+    }
+]
