@@ -233,6 +233,42 @@
     {
         "label": "Account",
         "kind": 6,
+        "importPath": "Inheritance.Account",
+        "description": "Inheritance.Account",
+        "peekOfCode": "class Account:\n    def __init__(self, number):\n        self.number = number\n        self.balance = 0.0\n    def getBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value",
+        "detail": "Inheritance.Account",
+        "documentation": {
+            "value": "\n```python\nfrom Inheritance.Account import Account\n```\n\n```python\n\n\n```\n\n```python\nclass Account:\n    def __init__(self, number):\n        self.number = number\n        self.balance = 0.0\n    def getBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "SavingAccount",
+        "kind": 6,
+        "importPath": "Inheritance.Account",
+        "description": "Inheritance.Account",
+        "peekOfCode": "class SavingAccount(Account):\n    def __init__(self, number):\n        super().__init__(number)\n        self.__yield = 0\n    def getYield(self):\n        return self.__yield\n    def applyYield(self, rate):\n        self.__yield += super().getBalance() * rate / 100\nobj = SavingAccount(1)\nobj.deposit(200.0)",
+        "detail": "Inheritance.Account",
+        "documentation": {
+            "value": "\n```python\nfrom Inheritance.Account import SavingAccount\n```\n\n```python\n\n\n```\n\n```python\nclass SavingAccount(Account):\n    def __init__(self, number):\n        super().__init__(number)\n        self.__yield = 0\n    def getYield(self):\n        return self.__yield\n    def applyYield(self, rate):\n        self.__yield += super().getBalance() * rate / 100\nobj = SavingAccount(1)\nobj.deposit(200.0)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "Inheritance.Account",
+        "description": "Inheritance.Account",
+        "peekOfCode": "obj = SavingAccount(1)\nobj.deposit(200.0)\nobj.applyYield(10)\nprint(obj.getBalance())\nprint(obj.getYield())",
+        "detail": "Inheritance.Account",
+        "documentation": {
+            "value": "\n```python\nfrom Inheritance.Account import obj\n```\n\n```python\n\n\n```\n\n```python\nobj = SavingAccount(1)\nobj.deposit(200.0)\nobj.applyYield(10)\nprint(obj.getBalance())\nprint(obj.getYield())\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Account",
+        "kind": 6,
         "importPath": "MenuAccount.Account",
         "description": "MenuAccount.Account",
         "peekOfCode": "class Account:\n    def __init__(self, accountID):\n        self.AccountID = accountID\n        self.balance = 0.0\n    def showBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value",
