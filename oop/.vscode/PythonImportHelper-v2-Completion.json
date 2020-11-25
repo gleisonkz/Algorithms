@@ -337,5 +337,77 @@
             "value": "\n```python\nfrom RaceCar.RaceCar import RaceCar\n```\n\n```python\n\n\n```\n\n```python\nclass RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def __init__(self, carID: int, pilot: str, team: str, maxSpeed: float):\n        self.carID = carID\n        self.pilot = pilot\n```\n",
             "supportThemeIcons": false
         }
+    },
+    {
+        "label": "Date",
+        "kind": 6,
+        "importPath": "revision.Date",
+        "description": "revision.Date",
+        "peekOfCode": "class Date:\n    day = None\n    month = None\n    year = None\n    def init(self, day, month, year):\n        self.month = self.validateMonth(month)\n        self.day = self.validateDay(day)\n        self.year = self.validateYear(year)\n    def validateMonth(self, month):\n        (month <= 0 or month > 12) and self.sair('month invalido')",
+        "detail": "revision.Date",
+        "documentation": {
+            "value": "\n```python\nfrom revision.Date import Date\n```\n\n```python\n\n\n```\n\n```python\nclass Date:\n    day = None\n    month = None\n    year = None\n    def init(self, day, month, year):\n        self.month = self.validateMonth(month)\n        self.day = self.validateDay(day)\n        self.year = self.validateYear(year)\n    def validateMonth(self, month):\n        (month <= 0 or month > 12) and self.sair('month invalido')\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Lamp",
+        "kind": 6,
+        "importPath": "revision.Lamp",
+        "description": "revision.Lamp",
+        "peekOfCode": "class Lamp:\n    state = None\n    def __init__(self, state):\n        self.state = state",
+        "detail": "revision.Lamp",
+        "documentation": {
+            "value": "\n```python\nfrom revision.Lamp import Lamp\n```\n\n```python\n\n\n```\n\n```python\nclass Lamp:\n    state = None\n    def __init__(self, state):\n        self.state = state\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "revision.Pessoa",
+        "description": "revision.Pessoa",
+        "peekOfCode": "class Person:\n    name = None\n    age = None\n    address = None\n    def __init__(self, name, age, address):\n        self.name = name\n        self.age = age\n        self.address = address\n    def setName(self, name):\n        self.name = name",
+        "detail": "revision.Pessoa",
+        "documentation": {
+            "value": "\n```python\nfrom revision.Pessoa import Person\n```\n\n```python\n\n\n```\n\n```python\nclass Person:\n    name = None\n    age = None\n    address = None\n    def __init__(self, name, age, address):\n        self.name = name\n        self.age = age\n        self.address = address\n    def setName(self, name):\n        self.name = name\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Teacher",
+        "kind": 6,
+        "importPath": "revision.Pessoa",
+        "description": "revision.Pessoa",
+        "peekOfCode": "class Teacher(Person):\n    salary = None\n    curriculum = None\n    def __init__(self, salary, curriculum, name, age, address):\n        self.salary = salary\n        self.curriculum = curriculum\n        super().__init__(name, age, address)\n    def setSalary(self, salary):\n        self.address = salary\n    def getAddress(self, address):",
+        "detail": "revision.Pessoa",
+        "documentation": {
+            "value": "\n```python\nfrom revision.Pessoa import Teacher\n```\n\n```python\n\n\n```\n\n```python\nclass Teacher(Person):\n    salary = None\n    curriculum = None\n    def __init__(self, salary, curriculum, name, age, address):\n        self.salary = salary\n        self.curriculum = curriculum\n        super().__init__(name, age, address)\n    def setSalary(self, salary):\n        self.address = salary\n    def getAddress(self, address):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "revision.Pessoa",
+        "description": "revision.Pessoa",
+        "peekOfCode": "class Student(Person):\n    registration = None\n    course = None\n    def __init__(self, registration, course, name, age, address):\n        self.registration = registration\n        self.course = course\n        super().__init__(name, age, address)\n    def setRegistration(self, registration):\n        self.registration = registration\n    def getRegistration(self):",
+        "detail": "revision.Pessoa",
+        "documentation": {
+            "value": "\n```python\nfrom revision.Pessoa import Student\n```\n\n```python\n\n\n```\n\n```python\nclass Student(Person):\n    registration = None\n    course = None\n    def __init__(self, registration, course, name, age, address):\n        self.registration = registration\n        self.course = course\n        super().__init__(name, age, address)\n    def setRegistration(self, registration):\n        self.registration = registration\n    def getRegistration(self):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "UnityConversor",
+        "kind": 6,
+        "importPath": "revision.UnitConversor",
+        "description": "revision.UnitConversor",
+        "peekOfCode": "class UnityConversor:\n    @staticmethod\n    def meterToFeet(value):\n        return value * 10.76\n    @staticmethod\n    def feetToCent(value):\n        return value * 30.48\n    @staticmethod\n    def mileToAcre(value):\n        return value * 640",
+        "detail": "revision.UnitConversor",
+        "documentation": {
+            "value": "\n```python\nfrom revision.UnitConversor import UnityConversor\n```\n\n```python\n\n\n```\n\n```python\nclass UnityConversor:\n    @staticmethod\n    def meterToFeet(value):\n        return value * 10.76\n    @staticmethod\n    def feetToCent(value):\n        return value * 30.48\n    @staticmethod\n    def mileToAcre(value):\n        return value * 640\n```\n",
+            "supportThemeIcons": false
+        }
     }
 ]

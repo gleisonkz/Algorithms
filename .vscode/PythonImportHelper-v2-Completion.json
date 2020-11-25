@@ -444,6 +444,39 @@
         }
     },
     {
+        "label": "Account",
+        "importPath": "Account",
+        "description": "Account",
+        "isExtraImport": true,
+        "detail": "Account",
+        "documentation": {
+            "value": "\n```python\nimport Account\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Calculator",
+        "importPath": "Calculator",
+        "description": "Calculator",
+        "isExtraImport": true,
+        "detail": "Calculator",
+        "documentation": {
+            "value": "\n```python\nimport Calculator\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Calculator",
+        "importPath": "Calculator",
+        "description": "Calculator",
+        "isExtraImport": true,
+        "detail": "Calculator",
+        "documentation": {
+            "value": "\n```python\nimport Calculator\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Car",
         "importPath": "Car",
         "description": "Car",
@@ -463,6 +496,17 @@
         "detail": "sys",
         "documentation": {
             "value": "\n```python\nimport sys\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ATM",
+        "importPath": "ATM",
+        "description": "ATM",
+        "isExtraImport": true,
+        "detail": "ATM",
+        "documentation": {
+            "value": "\n```python\nimport ATM\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -2362,6 +2406,54 @@
         }
     },
     {
+        "label": "Calculator",
+        "kind": 6,
+        "importPath": "oop.Calculator.Calculator",
+        "description": "oop.Calculator.Calculator",
+        "peekOfCode": "class Calculator:\n    lastResult = 0\n    def sum(self, number1, number2):\n        result = number1 + number2\n        self.lastResult = result\n        return result\n    def getLastResult(self):\n        return self.lastResult\n    @staticmethod\n    def subtraction(number1, number2):",
+        "detail": "oop.Calculator.Calculator",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Calculator.Calculator import Calculator\n```\n\n```python\n\n\n```\n\n```python\nclass Calculator:\n    lastResult = 0\n    def sum(self, number1, number2):\n        result = number1 + number2\n        self.lastResult = result\n        return result\n    def getLastResult(self):\n        return self.lastResult\n    @staticmethod\n    def subtraction(number1, number2):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "objCalc",
+        "kind": 5,
+        "importPath": "oop.Calculator.Program",
+        "description": "oop.Calculator.Program",
+        "peekOfCode": "objCalc = Calculator()\nobjCalc.lastResult = 15\nprint(objCalc.lastResult)\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)",
+        "detail": "oop.Calculator.Program",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Calculator.Program import objCalc\n```\n\n```python\n\n\n```\n\n```python\nobjCalc = Calculator()\nobjCalc.lastResult = 15\nprint(objCalc.lastResult)\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "objCalc.lastResult",
+        "kind": 5,
+        "importPath": "oop.Calculator.Program",
+        "description": "oop.Calculator.Program",
+        "peekOfCode": "objCalc.lastResult = 15\nprint(objCalc.lastResult)\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)",
+        "detail": "oop.Calculator.Program",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Calculator.Program import objCalc.lastResult\n```\n\n```python\n\n\n```\n\n```python\nobjCalc.lastResult = 15\nprint(objCalc.lastResult)\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "firstResult",
+        "kind": 5,
+        "importPath": "oop.Calculator.Program",
+        "description": "oop.Calculator.Program",
+        "peekOfCode": "firstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)",
+        "detail": "oop.Calculator.Program",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Calculator.Program import firstResult\n```\n\n```python\n\n\n```\n\n```python\nfirstResult = objCalc.sum(2, 5)\nprint(firstResult)\nprint(Calculator.subtraction(6, 5))\nprint(Calculator.lastResult)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Car",
         "kind": 6,
         "importPath": "oop.car.Car",
@@ -2388,6 +2480,42 @@
     {
         "label": "Account",
         "kind": 6,
+        "importPath": "oop.Inheritance.Account",
+        "description": "oop.Inheritance.Account",
+        "peekOfCode": "class Account:\n    def __init__(self, number):\n        self.number = number\n        self.balance = 0.0\n    def getBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value",
+        "detail": "oop.Inheritance.Account",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Inheritance.Account import Account\n```\n\n```python\n\n\n```\n\n```python\nclass Account:\n    def __init__(self, number):\n        self.number = number\n        self.balance = 0.0\n    def getBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "SavingAccount",
+        "kind": 6,
+        "importPath": "oop.Inheritance.Account",
+        "description": "oop.Inheritance.Account",
+        "peekOfCode": "class SavingAccount(Account):\n    def __init__(self, number):\n        super().__init__(number)\n        self.__yield = 0\n    def getYield(self):\n        return self.__yield\n    def applyYield(self, rate):\n        self.__yield += super().getBalance() * rate / 100\nobj = SavingAccount(1)\nobj.deposit(200.0)",
+        "detail": "oop.Inheritance.Account",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Inheritance.Account import SavingAccount\n```\n\n```python\n\n\n```\n\n```python\nclass SavingAccount(Account):\n    def __init__(self, number):\n        super().__init__(number)\n        self.__yield = 0\n    def getYield(self):\n        return self.__yield\n    def applyYield(self, rate):\n        self.__yield += super().getBalance() * rate / 100\nobj = SavingAccount(1)\nobj.deposit(200.0)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "oop.Inheritance.Account",
+        "description": "oop.Inheritance.Account",
+        "peekOfCode": "obj = SavingAccount(1)\nobj.deposit(200.0)\nobj.applyYield(10)\nprint(obj.getBalance())\nprint(obj.getYield())",
+        "detail": "oop.Inheritance.Account",
+        "documentation": {
+            "value": "\n```python\nfrom oop.Inheritance.Account import obj\n```\n\n```python\n\n\n```\n\n```python\nobj = SavingAccount(1)\nobj.deposit(200.0)\nobj.applyYield(10)\nprint(obj.getBalance())\nprint(obj.getYield())\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Account",
+        "kind": 6,
         "importPath": "oop.MenuAccount.Account",
         "description": "oop.MenuAccount.Account",
         "peekOfCode": "class Account:\n    def __init__(self, accountID):\n        self.AccountID = accountID\n        self.balance = 0.0\n    def showBalance(self):\n        return self.balance\n    def deposit(self, value):\n        self.balance += value\n    def withdrown(self, value):\n        self.balance -= value",
@@ -2398,38 +2526,14 @@
         }
     },
     {
-        "label": "showMenu",
-        "kind": 2,
-        "importPath": "oop.MenuAccount.Program",
-        "description": "oop.MenuAccount.Program",
-        "peekOfCode": "def showMenu():\n    print(\"************Welcome to Account Bank**************\")\n    action = tryParseInt(\"\"\"\n 1: Show Balance\n 2: Withdrown\n 3: Deposit\n 4: Transfer\n 5: Exit\n Please enter your choice: \"\"\")\n    if action == 1:",
-        "detail": "oop.MenuAccount.Program",
+        "label": "ATM",
+        "kind": 6,
+        "importPath": "oop.MenuAccount.ATM",
+        "description": "oop.MenuAccount.ATM",
+        "peekOfCode": "class ATM:\n    currentAccount = None\n    def __init__(self, currentAccount) -> None:\n        os.system('cls||clear')\n        self.currentAccount = currentAccount\n    def showMenu(self):\n        print(\"************Welcome to Account Bank**************\")\n        action = self.getUserOption()\n        if action == 1:\n            print(self.currentAccount.showBalance())",
+        "detail": "oop.MenuAccount.ATM",
         "documentation": {
-            "value": "\n```python\nfrom oop.MenuAccount.Program import showMenu\n```\n\n```python\n\n\n```\n\n```python\ndef showMenu():\n    print(\"************Welcome to Account Bank**************\")\n    action = tryParseInt(\"\"\"\n 1: Show Balance\n 2: Withdrown\n 3: Deposit\n 4: Transfer\n 5: Exit\n Please enter your choice: \"\"\")\n    if action == 1:\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "tryParseInt",
-        "kind": 2,
-        "importPath": "oop.MenuAccount.Program",
-        "description": "oop.MenuAccount.Program",
-        "peekOfCode": "def tryParseInt(message: str) -> int:\n    try:\n        return int(input(message))\n    except ValueError:\n        print(\"You must be input a integer value.\")\n        return tryParseInt(message)\ndef loading(message):\n    for index in range(8):\n        dots = [\n            f'{message}   ', f'{message}.', f'{message}..', f'{message}...',",
-        "detail": "oop.MenuAccount.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.MenuAccount.Program import tryParseInt\n```\n\n```python\n\n\n```\n\n```python\ndef tryParseInt(message: str) -> int:\n    try:\n        return int(input(message))\n    except ValueError:\n        print(\"You must be input a integer value.\")\n        return tryParseInt(message)\ndef loading(message):\n    for index in range(8):\n        dots = [\n            f'{message}   ', f'{message}.', f'{message}..', f'{message}...',\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "loading",
-        "kind": 2,
-        "importPath": "oop.MenuAccount.Program",
-        "description": "oop.MenuAccount.Program",
-        "peekOfCode": "def loading(message):\n    for index in range(8):\n        dots = [\n            f'{message}   ', f'{message}.', f'{message}..', f'{message}...',\n            f'{message}   ', f'{message}.', f'{message}..', f'{message}...',\n        ]\n        print(f\"{dots[index]}\", end=\"\\r\")\n        sleep(0.2)\n        pass\nshowMenu()",
-        "detail": "oop.MenuAccount.Program",
-        "documentation": {
-            "value": "\n```python\nfrom oop.MenuAccount.Program import loading\n```\n\n```python\n\n\n```\n\n```python\ndef loading(message):\n    for index in range(8):\n        dots = [\n            f'{message}   ', f'{message}.', f'{message}..', f'{message}...',\n            f'{message}   ', f'{message}.', f'{message}..', f'{message}...',\n        ]\n        print(f\"{dots[index]}\", end=\"\\r\")\n        sleep(0.2)\n        pass\nshowMenu()\n```\n",
+            "value": "\n```python\nfrom oop.MenuAccount.ATM import ATM\n```\n\n```python\n\n\n```\n\n```python\nclass ATM:\n    currentAccount = None\n    def __init__(self, currentAccount) -> None:\n        os.system('cls||clear')\n        self.currentAccount = currentAccount\n    def showMenu(self):\n        print(\"************Welcome to Account Bank**************\")\n        action = self.getUserOption()\n        if action == 1:\n            print(self.currentAccount.showBalance())\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -2438,22 +2542,22 @@
         "kind": 5,
         "importPath": "oop.MenuAccount.Program",
         "description": "oop.MenuAccount.Program",
-        "peekOfCode": "userAccount = Account(1)\notherAccount = Account(2)\ndef showMenu():\n    print(\"************Welcome to Account Bank**************\")\n    action = tryParseInt(\"\"\"\n 1: Show Balance\n 2: Withdrown\n 3: Deposit\n 4: Transfer\n 5: Exit",
+        "peekOfCode": "userAccount = Account(132131512135)\nobjATM = ATM(userAccount)\nobjATM.showMenu()",
         "detail": "oop.MenuAccount.Program",
         "documentation": {
-            "value": "\n```python\nfrom oop.MenuAccount.Program import userAccount\n```\n\n```python\n\n\n```\n\n```python\nuserAccount = Account(1)\notherAccount = Account(2)\ndef showMenu():\n    print(\"************Welcome to Account Bank**************\")\n    action = tryParseInt(\"\"\"\n 1: Show Balance\n 2: Withdrown\n 3: Deposit\n 4: Transfer\n 5: Exit\n```\n",
+            "value": "\n```python\nfrom oop.MenuAccount.Program import userAccount\n```\n\n```python\n\n\n```\n\n```python\nuserAccount = Account(132131512135)\nobjATM = ATM(userAccount)\nobjATM.showMenu()\n```\n",
             "supportThemeIcons": false
         }
     },
     {
-        "label": "otherAccount",
+        "label": "objATM",
         "kind": 5,
         "importPath": "oop.MenuAccount.Program",
         "description": "oop.MenuAccount.Program",
-        "peekOfCode": "otherAccount = Account(2)\ndef showMenu():\n    print(\"************Welcome to Account Bank**************\")\n    action = tryParseInt(\"\"\"\n 1: Show Balance\n 2: Withdrown\n 3: Deposit\n 4: Transfer\n 5: Exit\n Please enter your choice: \"\"\")",
+        "peekOfCode": "objATM = ATM(userAccount)\nobjATM.showMenu()",
         "detail": "oop.MenuAccount.Program",
         "documentation": {
-            "value": "\n```python\nfrom oop.MenuAccount.Program import otherAccount\n```\n\n```python\n\n\n```\n\n```python\notherAccount = Account(2)\ndef showMenu():\n    print(\"************Welcome to Account Bank**************\")\n    action = tryParseInt(\"\"\"\n 1: Show Balance\n 2: Withdrown\n 3: Deposit\n 4: Transfer\n 5: Exit\n Please enter your choice: \"\"\")\n```\n",
+            "value": "\n```python\nfrom oop.MenuAccount.Program import objATM\n```\n\n```python\n\n\n```\n\n```python\nobjATM = ATM(userAccount)\nobjATM.showMenu()\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -2474,10 +2578,82 @@
         "kind": 6,
         "importPath": "oop.RaceCar.RaceCar",
         "description": "oop.RaceCar.RaceCar",
-        "peekOfCode": "class RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def setCurrentSpeed(self, speed: float):\n        self.currentSpeed = speed if speed <= self.maxSpeed else print(\n            \"You can't exceed the maximum speed\")",
+        "peekOfCode": "class RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def __init__(self, carID: int, pilot: str, team: str, maxSpeed: float):\n        self.carID = carID\n        self.pilot = pilot",
         "detail": "oop.RaceCar.RaceCar",
         "documentation": {
-            "value": "\n```python\nfrom oop.RaceCar.RaceCar import RaceCar\n```\n\n```python\n\n\n```\n\n```python\nclass RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def setCurrentSpeed(self, speed: float):\n        self.currentSpeed = speed if speed <= self.maxSpeed else print(\n            \"You can't exceed the maximum speed\")\n```\n",
+            "value": "\n```python\nfrom oop.RaceCar.RaceCar import RaceCar\n```\n\n```python\n\n\n```\n\n```python\nclass RaceCar:\n    carID: int = None\n    pilot: str = None\n    team: str = None\n    maxSpeed: float = None\n    currentSpeed: float = None\n    isTurnOn: bool = None\n    def __init__(self, carID: int, pilot: str, team: str, maxSpeed: float):\n        self.carID = carID\n        self.pilot = pilot\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Date",
+        "kind": 6,
+        "importPath": "oop.revision.Date",
+        "description": "oop.revision.Date",
+        "peekOfCode": "class Date:\n    day = None\n    month = None\n    year = None\n    def init(self, day, month, year):\n        self.month = self.validateMonth(month)\n        self.day = self.validateDay(day)\n        self.year = self.validateYear(year)\n    def validateMonth(self, month):\n        (month <= 0 or month > 12) and self.sair('month invalido')",
+        "detail": "oop.revision.Date",
+        "documentation": {
+            "value": "\n```python\nfrom oop.revision.Date import Date\n```\n\n```python\n\n\n```\n\n```python\nclass Date:\n    day = None\n    month = None\n    year = None\n    def init(self, day, month, year):\n        self.month = self.validateMonth(month)\n        self.day = self.validateDay(day)\n        self.year = self.validateYear(year)\n    def validateMonth(self, month):\n        (month <= 0 or month > 12) and self.sair('month invalido')\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Lamp",
+        "kind": 6,
+        "importPath": "oop.revision.Lamp",
+        "description": "oop.revision.Lamp",
+        "peekOfCode": "class Lamp:\n    state = None\n    def __init__(self, state):\n        self.state = state",
+        "detail": "oop.revision.Lamp",
+        "documentation": {
+            "value": "\n```python\nfrom oop.revision.Lamp import Lamp\n```\n\n```python\n\n\n```\n\n```python\nclass Lamp:\n    state = None\n    def __init__(self, state):\n        self.state = state\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "oop.revision.Pessoa",
+        "description": "oop.revision.Pessoa",
+        "peekOfCode": "class Person:\n    name = None\n    age = None\n    address = None\n    def __init__(self, name, age, address):\n        self.name = name\n        self.age = age\n        self.address = address\n    def setName(self, name):\n        self.name = name",
+        "detail": "oop.revision.Pessoa",
+        "documentation": {
+            "value": "\n```python\nfrom oop.revision.Pessoa import Person\n```\n\n```python\n\n\n```\n\n```python\nclass Person:\n    name = None\n    age = None\n    address = None\n    def __init__(self, name, age, address):\n        self.name = name\n        self.age = age\n        self.address = address\n    def setName(self, name):\n        self.name = name\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Teacher",
+        "kind": 6,
+        "importPath": "oop.revision.Pessoa",
+        "description": "oop.revision.Pessoa",
+        "peekOfCode": "class Teacher(Person):\n    salary = None\n    curriculum = None\n    def __init__(self, salary, curriculum, name, age, address):\n        self.salary = salary\n        self.curriculum = curriculum\n        super().__init__(name, age, address)\n    def setSalary(self, salary):\n        self.address = salary\n    def getAddress(self, address):",
+        "detail": "oop.revision.Pessoa",
+        "documentation": {
+            "value": "\n```python\nfrom oop.revision.Pessoa import Teacher\n```\n\n```python\n\n\n```\n\n```python\nclass Teacher(Person):\n    salary = None\n    curriculum = None\n    def __init__(self, salary, curriculum, name, age, address):\n        self.salary = salary\n        self.curriculum = curriculum\n        super().__init__(name, age, address)\n    def setSalary(self, salary):\n        self.address = salary\n    def getAddress(self, address):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "oop.revision.Pessoa",
+        "description": "oop.revision.Pessoa",
+        "peekOfCode": "class Student(Person):\n    registration = None\n    course = None\n    def __init__(self, registration, course, name, age, address):\n        self.registration = registration\n        self.course = course\n        super().__init__(name, age, address)\n    def setRegistration(self, registration):\n        self.registration = registration\n    def getRegistration(self):",
+        "detail": "oop.revision.Pessoa",
+        "documentation": {
+            "value": "\n```python\nfrom oop.revision.Pessoa import Student\n```\n\n```python\n\n\n```\n\n```python\nclass Student(Person):\n    registration = None\n    course = None\n    def __init__(self, registration, course, name, age, address):\n        self.registration = registration\n        self.course = course\n        super().__init__(name, age, address)\n    def setRegistration(self, registration):\n        self.registration = registration\n    def getRegistration(self):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "UnityConversor",
+        "kind": 6,
+        "importPath": "oop.revision.UnitConversor",
+        "description": "oop.revision.UnitConversor",
+        "peekOfCode": "class UnityConversor:\n    @staticmethod\n    def meterToFeet(value):\n        return value * 10.76\n    @staticmethod\n    def feetToCent(value):\n        return value * 30.48\n    @staticmethod\n    def mileToAcre(value):\n        return value * 640",
+        "detail": "oop.revision.UnitConversor",
+        "documentation": {
+            "value": "\n```python\nfrom oop.revision.UnitConversor import UnityConversor\n```\n\n```python\n\n\n```\n\n```python\nclass UnityConversor:\n    @staticmethod\n    def meterToFeet(value):\n        return value * 10.76\n    @staticmethod\n    def feetToCent(value):\n        return value * 30.48\n    @staticmethod\n    def mileToAcre(value):\n        return value * 640\n```\n",
             "supportThemeIcons": false
         }
     }
